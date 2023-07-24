@@ -19,6 +19,7 @@
               'btn-color': '#FF900E',
               'p-color': '#727272',
               'bg-color': '#FF900E1A',
+              'nav-color': '#424242',
             }
           }
         }
@@ -27,40 +28,41 @@
   </head>
   <body class="font-['Work_Sans'] not-italic h-[1000px] bg-bg-color">
     <header>
-      <nav class="navbar bg-transparent/40 md:justify-center lg:px-24 py-4 shadow-md fixed z-50">
+      <nav class="navbar bg-white md:justify-center lg:px-24 shadow-md fixed z-50">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-lg text-gray-400">
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium text-lg">
               <li><a>Home</a></li>
               <li><a>About Us</a></li>
               <li><a>Contact Us</a></li>
               <li><a>Log In</a></li>
             </ul>
           </div>
-          <a class="btn btn-ghost normal-case font-bold text-4xl text-gray-400 hover:text-gray-300 duration-300">
+          <a class="btn btn-ghost normal-case font-bold text-4xl text-header-color">
             <img src="images/icons/architect.png" alt="logo" class="w-10">
             G3 Architects
           </a>
         </div>
         <div class="navbar-end hidden lg:flex">
-          <ul class="menu menu-horizontal px-1 font-medium text-lg text-gray-400">
-            <li><a class="hover:text-gray-300 duration-300">Home</a></li>
-            <li><a class="hover:text-gray-300 duration-300">About Us</a></li>
-            <li><a class="hover:text-gray-300 duration-300">Contact Us</a></li>
-            <li><a class="hover:text-gray-300 duration-300">Log In</a></li>
+          <ul class="menu menu-horizontal px-1 font-medium text-lg text-nav-color">
+            <li><a class=>Home</a></li>
+            <li><a class=>About Us</a></li>
+            <li><a class=>Contact Us</a></li>
+            <li><a class=>Log In</a></li>
           </ul>
         </div>
       </nav>
-      <section class="hero min-h-screen bg-cover" style="background-image: url(images/banner.png);">
+      <section class="hero lg:min-h-screen bg-cover pt-14" style="background-image: url(images/banner.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content">
-          <div class="max-w-md">
-            <h1 class="mb-5 text-5xl font-bold">Brand New Group <br>of Architects</h1>
+          <div class="max-w-xl">
+            <h1 class="mb-5 text-6xl font-bold text-btn-color">Brand New Group <br><span class="text-header-color">of Architects</span></h1>
             <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-            <button class="btn bg-btn-color border-none">Explore More</button>
+            <button class="btn bg-btn-color border-none text-white hover:text-header-color">Explore More</button>
+            <img src="" alt="">
           </div>
         </div>
       </section>
